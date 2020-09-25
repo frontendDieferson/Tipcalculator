@@ -54,4 +54,11 @@ export const Footer = styled.p`
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin-top: 80px;
+
+  
+`;
+
+export const footer = styled.a`
+    text-decoration: none;
+
 `;

@@ -4,8 +4,6 @@ import { Container, Image, Footer } from './styles';
 
 
 
-
-
 const Title = styled.h1`
   font-family: 'Roboto', sans-serif;
   color: #FFF;
@@ -67,6 +65,14 @@ const Input = styled.input`
 
 `;
 
+export const A = styled.a`
+  text-decoration:none;
+  color: #FFF;
+  margin: 4px;
+  font-weight:bold;
+  
+`;
+
 
 
 
@@ -75,10 +81,14 @@ function App() {
   const [pct, setPct] = useState(10);
   const [conta, setConta] = useState();
 
-  return (
+  
 
+  return (
+    
     <Container>
+    
       <Image src="./assets/dinheiro.svg" />
+  
       <Title>Calculadora de Gorjeta</Title>
 
       <Paragraph>Quanto deu a conta?</Paragraph>
@@ -98,7 +108,8 @@ function App() {
       }
       
       <Footer>
-        <p>Desenvolvido por Dieferson Soares</p>
+        <p>Desenvolvido por | <A href="https://github.com/frontendDieferson" 
+        target="_blank">Dieferson Soares</A></p>
       </Footer>
     </Container>
 
