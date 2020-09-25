@@ -73,7 +73,7 @@ const Input = styled.input`
 function App() {
 
   const [pct, setPct] = useState(10);
-  const [conta, setConta] = useState(0);
+  const [conta, setConta] = useState();
 
   return (
 
