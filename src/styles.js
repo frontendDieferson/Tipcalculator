@@ -53,12 +53,20 @@ export const Footer = styled.p`
     color: #FFF;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    margin-top: 80px;
+    margin-top: 50px;
 
   
 `;
 
 export const footer = styled.a`
     text-decoration: none;
+
+`;
+
+export const ImageFooter = styled.img`
+
+    right: 10px;
+    
+   
 
 `;

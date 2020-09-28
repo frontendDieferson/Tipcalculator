@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Container, Image, Footer } from './styles';
+import { Container, Image, Footer, ImageFooter } from './styles';
 
 
 
@@ -11,6 +11,7 @@ const Title = styled.h1`
 
   @media (max-width: 414px) {
     flex-direction: column;
+    
     
 
     }
@@ -71,6 +72,12 @@ export const A = styled.a`
   margin: 4px;
   font-weight:bold;
   
+  &:hover{
+    text-decoration-line: underline;
+    
+    
+  }
+  
 `;
 
 
@@ -108,8 +115,8 @@ function App() {
       }
       
       <Footer>
-        <p>Desenvolvido por | <A href="https://github.com/frontendDieferson" 
-        target="_blank">Dieferson Soares</A></p>
+        <p>Desenvolvido por <A href="https://github.com/frontendDieferson" 
+        target="_blank"><ImageFooter src="./assets/happyCode.png"></ImageFooter></A></p>
       </Footer>
     </Container>
 
